@@ -1,0 +1,57 @@
+# vsim tb_csd_fir -c -do "run -all" 
+# Start time: 12:57:17 on Jun 24,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: CSD_FIR_Filter.sv(8): (vopt-13314) Defaulting port 'h_coeffs' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: CSD_FIR_Filter.sv(9): (vopt-13314) Defaulting port 'data_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# //  Questa Sim-64
+# //  Version 2021.1 win64 Jan 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_csd_fir(fast)
+# run -all
+# [PASS] moving_avg_dc      expected=0.250000 actual=0.250000 err=0.000000
+# [PASS] impulse            expected=0.150000 actual=0.149994 err=0.000006
+# [PASS] random_0           expected=0.010903 actual=0.010773 err=0.000130
+# [PASS] random_1           expected=0.008864 actual=0.008728 err=0.000136
+# [PASS] random_2           expected=0.016115 actual=0.015991 err=0.000124
+# [PASS] random_3           expected=-0.011115 actual=-0.011200 err=0.000085
+# [PASS] random_4           expected=-0.011593 actual=-0.011658 err=0.000065
+# [PASS] random_5           expected=0.016425 actual=0.016266 err=0.000159
+# [PASS] random_6           expected=0.002903 actual=0.002777 err=0.000125
+# [PASS] random_7           expected=0.007484 actual=0.007355 err=0.000129
+# [PASS] random_8           expected=-0.014979 actual=-0.015106 err=0.000128
+# [PASS] random_9           expected=-0.009531 actual=-0.009644 err=0.000112
+# [PASS] random_10          expected=0.001686 actual=0.001587 err=0.000099
+# [PASS] random_11          expected=0.010677 actual=0.010590 err=0.000087
+# [PASS] random_12          expected=0.003184 actual=0.003052 err=0.000132
+# [PASS] random_13          expected=-0.010971 actual=-0.011047 err=0.000077
+# [PASS] random_14          expected=0.013858 actual=0.013733 err=0.000125
+# [PASS] random_15          expected=0.006429 actual=0.006348 err=0.000081
+# [PASS] random_16          expected=-0.003090 actual=-0.003204 err=0.000114
+# [PASS] random_17          expected=-0.001551 actual=-0.001617 err=0.000066
+# [PASS] random_18          expected=0.017748 actual=0.017639 err=0.000109
+# [PASS] random_19          expected=0.004044 actual=0.003967 err=0.000077
+# [PASS] force_saturate_pos expected=0.999969 actual=0.999969 err=0.000000
+# [PASS] force_saturate_neg expected=-1.000000 actual=-1.000000 err=0.000000
+# --------------------------------------------------
+# Tests run   : 24
+# Failures    : 0
+# Max abs err : 0.000159 (tolerance = 0.000305)
+# RESULT: ALL TESTS PASSED
+# --------------------------------------------------
+# ** Note: $finish    : CSD_FIR_tb.sv(189)
+#    Time: 505 ns  Iteration: 1  Instance: /tb_csd_fir
+# End time: 12:57:20 on Jun 24,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 2
