@@ -1,0 +1,109 @@
+# vsim tb_biquad_iir -c -do "run -all" 
+# Start time: 04:34:35 on Jun 27,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 2021.1 win64 Jan 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_biquad_iir(fast)
+# run -all
+# === Biquad IIR Testbench ===
+#     x/y format   : Q15.16 (32-bit)
+#     coeff format : Q15.16 (32-bit)
+#     TOLERANCE    : 4.577637e-05 (2 LSBs)
+# 
+# --- Test 1: Reset ---
+# PASS [reset_output_zero ] y=0 during reset
+# 
+# --- Test 2: All-pass (b0=1, rest=0) ---
+# PASS [allpass x=0.5       ] cyc=1  x=  0.5000  y=  0.500000  exp=  0.500000
+# PASS [allpass x=-0.25     ] cyc=2  x= -0.2500  y= -0.250000  exp= -0.250000
+# PASS [allpass x=0.0       ] cyc=3  x=  0.0000  y=  0.000000  exp=  0.000000
+# PASS [allpass x=1.0       ] cyc=4  x=  1.0000  y=  1.000000  exp=  1.000000
+# 
+# --- Test 3: LPF Impulse Response ---
+# PASS [impulse n=0         ] cyc=0  x=  1.0000  y=  0.003616  exp=  0.003621
+# PASS [impulse n=1         ] cyc=1  x=  0.0000  y=  0.010864  exp=  0.010863
+# PASS [impulse n=2         ] cyc=2  x=  0.0000  y=  0.003571  exp=  0.003569
+# PASS [impulse n=3         ] cyc=3  x=  0.0000  y=  0.010712  exp=  0.010708
+# PASS [impulse n=4         ] cyc=4  x=  0.0000  y=  0.003525  exp=  0.003518
+# PASS [impulse n=5         ] cyc=5  x=  0.0000  y=  0.010559  exp=  0.010555
+# PASS [impulse n=6         ] cyc=6  x=  0.0000  y=  0.003479  exp=  0.003468
+# PASS [impulse n=7         ] cyc=7  x=  0.0000  y=  0.010406  exp=  0.010404
+# PASS [impulse n=8         ] cyc=8  x=  0.0000  y=  0.003433  exp=  0.003419
+# PASS [impulse n=9         ] cyc=9  x=  0.0000  y=  0.010254  exp=  0.010256
+# PASS [impulse n=10        ] cyc=10  x=  0.0000  y=  0.003387  exp=  0.003370
+# PASS [impulse n=11        ] cyc=11  x=  0.0000  y=  0.010101  exp=  0.010109
+# PASS [impulse n=12        ] cyc=12  x=  0.0000  y=  0.003342  exp=  0.003322
+# PASS [impulse n=13        ] cyc=13  x=  0.0000  y=  0.009964  exp=  0.009965
+# PASS [impulse n=14        ] cyc=14  x=  0.0000  y=  0.003296  exp=  0.003274
+# PASS [impulse n=15        ] cyc=15  x=  0.0000  y=  0.009827  exp=  0.009822
+# PASS [impulse n=16        ] cyc=16  x=  0.0000  y=  0.003250  exp=  0.003227
+# PASS [impulse n=17        ] cyc=17  x=  0.0000  y=  0.009689  exp=  0.009682
+# PASS [impulse n=18        ] cyc=18  x=  0.0000  y=  0.003204  exp=  0.003181
+# PASS [impulse n=19        ] cyc=19  x=  0.0000  y=  0.009552  exp=  0.009544
+# 
+# --- Test 4: LPF Step Response ---
+# PASS [step n=0            ] cyc=0  x=  1.0000  y=  0.003616  exp=  0.003621
+# PASS [step n=1            ] cyc=1  x=  1.0000  y=  0.014481  exp=  0.014484
+# PASS [step n=2            ] cyc=2  x=  1.0000  y=  0.018051  exp=  0.018053
+# PASS [step n=3            ] cyc=3  x=  1.0000  y=  0.028748  exp=  0.028761
+# PASS [step n=4            ] cyc=4  x=  1.0000  y=  0.032272  exp=  0.032279
+# PASS [step n=5            ] cyc=5  x=  1.0000  y=  0.042816  exp=  0.042834
+# PASS [step n=6            ] cyc=6  x=  1.0000  y=  0.046295  exp=  0.046302
+# PASS [step n=7            ] cyc=7  x=  1.0000  y=  0.056686  exp=  0.056707
+# PASS [step n=8            ] cyc=8  x=  1.0000  y=  0.060120  exp=  0.060125
+# PASS [step n=9            ] cyc=9  x=  1.0000  y=  0.070358  exp=  0.070381
+# PASS [step n=10           ] cyc=10  x=  1.0000  y=  0.073746  exp=  0.073750
+# PASS [step n=11           ] cyc=11  x=  1.0000  y=  0.083832  exp=  0.083859
+# PASS [step n=12           ] cyc=12  x=  1.0000  y=  0.087173  exp=  0.087181
+# PASS [step n=13           ] cyc=13  x=  1.0000  y=  0.097122  exp=  0.097146
+# PASS [step n=14           ] cyc=14  x=  1.0000  y=  0.100403  exp=  0.100420
+# PASS [step n=15           ] cyc=15  x=  1.0000  y=  0.110214  exp=  0.110242
+# PASS [step n=16           ] cyc=16  x=  1.0000  y=  0.113449  exp=  0.113469
+# PASS [step n=17           ] cyc=17  x=  1.0000  y=  0.123123  exp=  0.123151
+# PASS [step n=18           ] cyc=18  x=  1.0000  y=  0.126312  exp=  0.126333
+# PASS [step n=19           ] cyc=19  x=  1.0000  y=  0.135849  exp=  0.135876
+# PASS [step n=20           ] cyc=20  x=  1.0000  y=  0.138992  exp=  0.139012
+# PASS [step n=21           ] cyc=21  x=  1.0000  y=  0.148392  exp=  0.148420
+# PASS [step n=22           ] cyc=22  x=  1.0000  y=  0.151489  exp=  0.151511
+# PASS [step n=23           ] cyc=23  x=  1.0000  y=  0.160751  exp=  0.160784
+# PASS [step n=24           ] cyc=24  x=  1.0000  y=  0.163803  exp=  0.163831
+# PASS [step n=25           ] cyc=25  x=  1.0000  y=  0.172943  exp=  0.172971
+# PASS [step n=26           ] cyc=26  x=  1.0000  y=  0.175949  exp=  0.175975
+# PASS [step n=27           ] cyc=27  x=  1.0000  y=  0.184952  exp=  0.184985
+# PASS [step n=28           ] cyc=28  x=  1.0000  y=  0.187912  exp=  0.187945
+# PASS [step n=29           ] cyc=29  x=  1.0000  y=  0.196793  exp=  0.196827
+# 
+# --- Test 5: DC Steady State (RTL vs golden) ---
+#     RTL settled  = 0.986069
+#     Golden settled = 0.986267
+# FAIL [DC_steady_state   ] err=1.984468e-04 (> 4.577637e-05)  <<<
+# 
+# --- Test 6: HF Attenuation (12kHz, cutoff 1kHz) ---
+# PASS [HF_attenuation    ] peak=0.004639 (< 0.05)
+# 
+# --- Test 7: Saturation ---
+# PASS [sat_max_pos       ] y=MAX_POS as expected
+# PASS [sat_min_neg       ] y=MIN_NEG as expected
+# 
+# --- Test 8: Mid-run Reset ---
+# PASS [mid_run_reset     ] y=0 after reset
+# PASS [post_reset_zero   ] y=0 after reset+zero input
+# 
+# === RESULTS: PASS=60  FAIL=1  TOTAL=61 ===
+# ** Note: $finish    : Biquad_IIR_tb.sv(358)
+#    Time: 7366 ns  Iteration: 0  Instance: /tb_biquad_iir
+# End time: 04:34:38 on Jun 27,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
