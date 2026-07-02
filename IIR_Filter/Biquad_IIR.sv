@@ -62,13 +62,14 @@ module biquad_iir #(
     .YF(COEFF_FRACTIONAL_PART))
     SCALED_OUTPUT (.P(x_b0 + b1_a1),.P_scaled(result_scaled));
 
-    assign b2_a2 = x_b2 - y_a2;
 
    always_ff @(posedge clk or negedge rst_n) begin
       if (!rst_n) begin
          y <= 'b0;
          b1_a1 <= 'b0;
+         b2_a2 <= 'b0;
       end else begin
+         b2_a2 <= x_b2 - y_a2;
          b1_a1 <= x_b1 - y_a1 + b2_a2;
          y <= result_scaled;
       end

@@ -10,6 +10,10 @@ R0
 R0
 R0
 R0
+R0
+R0
+R0
+R0
 !s11f MIXED_VERSIONS
 13
 !s112 1.1
@@ -32,130 +36,141 @@ R1
 T_opt1
 !s110 1782524075
 V:nDM;3c;ABIb?F??MJeTW3
-04 13 4 work tb_biquad_iir fast 0
+Z6 04 13 4 work tb_biquad_iir fast 0
 =1-40c2baf61321-6a3f28ab-32e-1b4c
 R2
 R3
 R4
 n@_opt1
 R5
-vbiquad_iir
-Z6 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z7 !s110 1782524070
-!i10b 1
-!s100 ^?Lg:W34Ia1g977SamE<@1
-IcAn69n;]W5I9]dQ85`7A^1
-S1
 R1
-w1782523271
+T_opt2
+!s110 1783008090
+VNgc>`I]e6MM=_oU=3llzG1
+R6
+=1-40c2baf61321-6a468b5a-2ca-1fc4
+R2
+R3
+R4
+n@_opt2
+R5
+vbiquad_iir
+Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z8 !s110 1783008085
+!i10b 1
+!s100 cd4X`>SaRz]KHY1dC`7G92
+IUZ=ilDEkDe=;Cz0S7@8Nl0
+S1
+Z9 dC:/Users/osama/OneDrive/Desktop/Filters_Mania/IIR_Filter
+w1783007239
 8Biquad_IIR.sv
 FBiquad_IIR.sv
-!i122 22
-L0 1 77
-Z8 VDg1SIo80bB@j0V0VzS_@n1
-Z9 OL;L;2021.1;73
+!i122 28
+L0 1 78
+Z10 VDg1SIo80bB@j0V0VzS_@n1
+Z11 OL;L;2021.1;73
 r1
 !s85 0
 31
-Z10 !s108 1782524070.000000
-Z11 !s107 Rescale.sv|Radix_4_Booth_Mult.sv|Booth_Mult_tb.sv|Biquad_IIR_tb.sv|Biquad_IIR.sv|
-Z12 !s90 Biquad_IIR.sv|Biquad_IIR_tb.sv|Booth_Mult_tb.sv|Radix_4_Booth_Mult.sv|Rescale.sv|
+Z12 !s108 1783008085.000000
+Z13 !s107 Rescale.sv|Radix_4_Booth_Mult.sv|Booth_Mult_tb.sv|Biquad_IIR_tb.sv|Biquad_IIR.sv|
+Z14 !s90 Biquad_IIR.sv|Biquad_IIR_tb.sv|Booth_Mult_tb.sv|Radix_4_Booth_Mult.sv|Rescale.sv|
 !i113 0
-Z13 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z15 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R4
 vbooth_radix4_mult
-R6
 R7
+R8
 !i10b 1
 !s100 bSW:8fjE:Wb?RG?]0gekL0
 I8P73f0ihZchc9kNB_?E6N3
 S1
-R1
+R9
 w1782519127
 8Radix_4_Booth_Mult.sv
 FRadix_4_Booth_Mult.sv
-!i122 22
+!i122 28
 L0 2 65
-R8
-R9
+R10
+R11
 r1
 !s85 0
 31
-R10
-R11
 R12
-!i113 0
 R13
+R14
+!i113 0
+R15
 R4
 vrescale
-R6
 R7
+R8
 !i10b 1
 !s100 l`_[8zE1Z8k_oRF0>>K2M2
 IZ1hZU4HdT@z3BAK77IzeC1
 S1
-R1
+R9
 w1782520505
 8Rescale.sv
 FRescale.sv
-!i122 22
+!i122 28
 L0 1 34
-R8
-R9
+R10
+R11
 r1
 !s85 0
 31
-R10
-R11
 R12
-!i113 0
 R13
+R14
+!i113 0
+R15
 R4
 vtb_biquad_iir
-R6
 R7
+R8
 !i10b 1
-!s100 >O[2Q9]TGD?^e[Aidh]gF3
-I2Ti`RFfe@>LT16FXm7bz[2
+!s100 kRJcdFigzN^kUHn6zb4SD1
+I=lYZG2CCgOl4;8`WI=C@d1
 S1
-R1
-w1782524066
+R9
+w1783008081
 8Biquad_IIR_tb.sv
 FBiquad_IIR_tb.sv
-!i122 22
-L0 18 344
-R8
-R9
+!i122 28
+L0 39 292
+R10
+R11
 r1
 !s85 0
 31
-R10
-R11
 R12
-!i113 0
 R13
+R14
+!i113 0
+R15
 R4
 vtb_booth_radix4
-R6
 R7
+R8
 !i10b 1
 !s100 LO1N25cdn_9?FPGK@?cLS0
 IDAZe=`dY2ad4ggKN;FD1R1
 S1
-R1
+R9
 w1782519158
 8Booth_Mult_tb.sv
 FBooth_Mult_tb.sv
-!i122 22
+!i122 28
 L0 5 142
-R8
-R9
+R10
+R11
 r1
 !s85 0
 31
-R10
-R11
 R12
-!i113 0
 R13
+R14
+!i113 0
+R15
 R4

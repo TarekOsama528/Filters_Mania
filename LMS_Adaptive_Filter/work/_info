@@ -1,0 +1,70 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/osama/OneDrive/Desktop/Filters_Mania/LMS_Adaptive_Filter
+T_opt
+!s110 1783009860
+V7Yfb2>[Bh>9]`HQ5VoT:N2
+04 6 4 work tb_lms fast 0
+=1-40c2baf61321-6a469244-7b-7134
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vlms_adaptive_filter
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1783009844
+!i10b 1
+!s100 mb7>l960hH;e5COUlC7=>3
+I;]dO`0d<Zl8^X@nY>E8Hj1
+S1
+R0
+w1783009678
+8LMS_adaptive_filter.sv
+FLMS_adaptive_filter.sv
+!i122 1
+L0 20 130
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z6 !s108 1783009844.000000
+Z7 !s107 lms_FIR_tb.sv|LMS_adaptive_filter.sv|
+Z8 !s90 LMS_adaptive_filter.sv|lms_FIR_tb.sv|
+!i113 0
+Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vtb_lms
+R2
+R3
+!i10b 1
+!s100 VOE@@nT_R>8;PJjBKB>I?2
+IW4f6ooVFKLCQf6KKz>Y5?2
+S1
+R0
+w1783009832
+8lms_FIR_tb.sv
+Flms_FIR_tb.sv
+!i122 1
+L0 21 188
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
